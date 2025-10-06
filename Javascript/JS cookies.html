@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS cookies</title>
+</head>
+<body>
+    <h2>JS cookies</h2>
+    <script>
+        function setcookies(cname,cvalue,expday)
+        {
+                     const d= new date();
+                     d.setTime(d.getDate()+(expday*24*60*60*1000));
+                     let expire= "Expires =" + d.toUTCString();
+                     document.cookie= cname+ "=" + cvalue + ";" + expire + ";path=/";
+                    
+        }
+        function getcookies(cname){
+            let name = cname + "=";
+            let decCookies= decodeURIComponent(document.cookie);
+            let ca= decCookies.split(";");
+            for(let i=0;i<ca.length;i++){
+                let c = ca[i];
+                while(c.charAt(0)==' '){
+                    c=c.substring(1)
+                }
+                if(c.indexOf(cname)==0){
+                    return c.substring(name.length,c.length);
+                }
+            }
+            return "";
+        }
+        function checkcookies(){
+            let user = getcookies("username");
+            if (user!==""){
+                alert("Welcome Again" + user);
+            }
+            else {
+                user = prompt("Please enter your name :","");
+                if(user!=" " && user!=null) {
+                    setCookies("username",user,30);
+                }
+            }
+        }
+    </script>
+</body onload = "checkcookies()">
+</html>

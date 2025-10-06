@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS array</title>
+    <style>
+        p{
+            font-size: larger;
+            color: rgb(47, 0, 255);
+
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript array</h1>
+    <p id="res"></p>
+    <p id="res1"></p>
+    <script>
+      const student = ["Ayush","Manoj","Bipin","Hritik"];
+    //   student.splice(2,0,"Seema","Geeta")
+    // const studentM = student.slice(1);
+
+    //   student.pop();
+    // student.shift();
+    // student.unshift("munna");
+    //   student[4]= "Suman";
+        // const student=[];
+        // student[0]="Ashok";
+        // const student= new Array ("Ashok","Rajesh");
+        let str = "<ul>";
+            student.forEach(myfunction);
+            str+="</ul>"
+            function myfunction(value){
+                str+="<li>"+ value + "</li>";
+            }
+        // document.getElementById("res").innerHTML=str;
+        //  document.getElementById("res").innerHTML=student.toString();
+         document.getElementById("res").innerHTML=student.join("$");
+         student.sort();
+         student.reverse();
+         document.getElementById("res1").innerHTML=student.join("$");
+
+         
+
+
+
+
+    </script>
+</body>
+</html>

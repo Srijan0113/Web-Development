@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in Javascript</title>
+</head>
+<body>
+    <h1>Functions in Javascript</h1>
+    <p>Javascript function is a blick of code designed to perform a a particular task</p>
+ <p>A Javascript function is executed when "something invokes it </p>
+
+<p id="res"></p>
+
+    <script>
+        // function myproduct(x,y){
+        //     return x*y;
+        // }
+        function tocelcius(f){
+            return (5/9)*(f-32)
+        }
+        let x=tocelcius(98.4);
+        let txt = "The temperature is " + x + "  " +"Celsius" ;
+        document.getElementById("res").innerHTML=txt;
+    </script>
+</body>
+</html>

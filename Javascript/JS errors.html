@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript errors </title>
+</head>
+<body>
+    <p>This is about javascript errors</p>
+    <h3>Try catch throw finally</h3>
+    <p>Please inout no. 10-20</p>
+    <input type="text" id="input">
+    <button type="button" onclick="validateInput()">TEST VALUE</button>
+    <p id="res"></p>
+    <input type="text" id="myText" value="Hello">
+ 
+<script>
+ 
+</script>
+    <script>
+    //    try{
+    //     alerts("Hi I am learning javascript");
+    //    }
+    //    catch(err)
+    //    {
+    //     document.getElementById("res").innerHTML=err.message;
+    //    }
+    document.getElementById("myText").value= "Have a nice day!";
+
+    function validateInput(){
+        const msg=document.getElementById("res");
+        msg.innerHTML="";
+        let x=document.getElementById("input").value;
+        try{
+            if(x.trim()=="")
+            {
+                throw"Empty";
+            }
+            if(isNaN(x))
+            {
+                throw"Not a number";
+            }
+        }
+        catch(err){
+            msg.innerHTML="Input is" + " " + err;
+        }
+        finally{
+            document.getElementById("input").value="";
+        }
+    }
+    </script>
+</body>
+</html>

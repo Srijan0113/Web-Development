@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS popup boxes</title>
+</head>
+<body>
+    <h1>POPUP boxes</h1>
+    <p id="res"></p>
+    <p id="res1"></p>
+    
+    <button type="button" onclick="newwin()">Click</button>
+    <button type="button" onclick="goback()">Next</button>
+
+    <script>
+        function newwin(){
+            let str;
+            if(confirm("Click a button!")){
+                str="you clicked ok!";
+                document.getElementById("res").innerHTML=str;
+            }
+            else{
+                str="You clicked cancel!";
+                document.getElementById("res1").innerHTML=str;
+            }
+           
+        }
+        function goback(){
+            let str;
+            let name= prompt("enter your name :","Srijan");
+            
+            if (name==null||name=="")
+            {
+                str="user cancel the prompt";
+                document.getElementById("res1").innerHTML=str;
+            }
+            else{
+                str="Hello"+ name + "! Welcome my friend";
+                document.getElementById("res").innerHTML=str;
+            }
+        }
+    </script>
+</body>
+</html>

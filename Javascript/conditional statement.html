@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional statement</title>
+    <style>
+        p{
+            color: blueviolet;
+            font-style: italic;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h2>JS conditional Statement</h2>
+    <p id="res"></p>
+    <script>
+        // if(new Date().getHours()<=12){
+        //     document.getElementById("res").innerHTML="Good Morning!!!";
+        // }
+        // else if (new Date().getHours()<=16){
+        //     document.getElementById("res").innerHTML="Good Afternoon!!!";
+        // }
+        // else  {
+        //     document.getElementById("res").innerHTML="Good evening!!!";
+        // }
+          let day;
+        switch(new Date().getDay())
+        {
+            case 0:
+                day="Sunday";
+                break;
+            case 1:
+                day="monday";
+                break;
+            case 2:
+                day="tuesday";
+                break;
+            case 3:
+                day="wednesday";
+                break;
+            case 4:
+                day="Thursday";
+                break;
+            case 5:
+                day="friday";
+                break;
+            case 6:
+                day="saturday";
+                break;
+                default:
+                    day="This is not a choice(0-6)";
+        }
+        document.getElementById("res").innerHTML=day;
+    </script>
+</body>
+</html>

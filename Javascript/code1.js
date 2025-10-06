@@ -1,0 +1,1 @@
+let firstName="Ankit",lastName="singh",age=35;

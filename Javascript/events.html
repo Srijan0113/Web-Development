@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events</title>
+    <style>
+        button
+        {
+            margin-top: 50px;
+            margin-left: 50px;
+            padding: 10px;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            background-color: rgb(76, 78, 208);
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p id="res"></p>
+    <!-- <button type="button" onclick="document.getElementById('res').innerHTML=Date()">What is Time Now?</button> -->
+    <!-- <button type="button" onclick="this.innerHTML=Date()">What is Time Now?</button> -->
+    <button type="button" onclick="currentDate()">What is Time Now?</button>
+    <script>
+        function currentDate()
+        {
+            return document.getElementById("res").innerHTML= Date();
+        }
+    </script>
+</body>
+</html>

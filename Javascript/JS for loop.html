@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS for loop</title>
+</head>
+<body>
+    <h3>JS for loop</h3>
+    <p id="res"></p>
+    <p id="res1"></p>
+    <p id="demo"></p>
+    <script>
+        // let num="";
+        // for(let i=1;i<=10;i++){
+        //     num+= "the number is = " + i + "<br>";
+        // }
+        // document.getElementById("res").innerHTML=num;
+        const student=["ram","shyam","hari","apri","chapri"];
+        // using for loop
+        // let str="";
+        // for (let i=0; i<=student.length;i++)
+        // {
+        //     str+=student[i] + "<br>"
+        // }
+        // document.getElementById("res").innerHTML=str;
+        const fruits = ["Apple", "Banana", "Orange"];
+        let str1="";
+        for(let x of fruits)
+        {
+          str1+= [x] + '<br>'
+              }
+      document.getElementById("demo").innerHTML=str1;
+        //using for of loop
+        let str="";
+        for (let x of student)
+        {
+            str+=[x] + "<br>"
+        }
+        document.getElementById("res").innerHTML=str;
+
+        // using for in loop
+
+        const person={fname:"amit",lname:"mishra",age:67};
+        let txt = "";
+        for(let x in person){
+            txt += person[x] + "<br>";
+        }
+        document.getElementById("res1").innerHTML=txt;
+    </script>
+</body>
+</html>

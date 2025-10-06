@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS popup boxes</title>
+</head>
+<body>
+    <h1>POPUP boxes</h1>
+    <p id="res"></p>
+    <p id="res1"></p>
+    
+    <button type="button" onclick="myvar=setTimeout(myfun,3000)">Start</button>
+    <button type="button" onclick="clearTimeout(myvar)">Stop</button>
+    <button type="button" onclick="myvar=setInterval(mytime,1000)">Start time</button>
+    <button type="button" onclick="clearInterval(myvar)">Stop time</button>
+    <script>
+        function myfun()
+        {
+            alert("Hello");
+        } 
+        function mytime(){
+            const d = new Date();
+            document.getElementById("res").innerHTML=d.toLocaleTimeString();
+        }
+    //    myvar= setInterval(mytime,1000);
+            
+
+        </script>
+        </body>
+        </html>
