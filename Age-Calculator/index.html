@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hello World</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Srijan's Age calculator</title>
 </head>
 <body>
-  <h1>Hello, World!</h1>
+    <div class="container">
+        <h1>Age Calculator</h1>
+        <form id="agecalculator">
+                 <div class="form-group">
+                    <label for="birthdate">Enter your BirthDate</label>
+                    <input type="date"id="birthdate"placeholder="mm-dd-yyyy"required>
+                 </div>
+                 <button type="submit">Calculate Age</button>
+        </form>
+
+        <div class="result_container" id="resultcontainer">
+            <div class="result" id="result">
+                <!-- <div class="result_items">
+                    <h3>Age:</h3>
+                    <p>Age in Years</p>
+                </div>
+                <div class="result_items">
+                    <h3>Age:</h3>
+                    <p>Age in Years</p>
+                </div>
+                <div class="result_items">
+                    <h3>Age:</h3>
+                    <p>Age in Years</p>
+                </div>
+                <div class="result_items">
+                    <h3>Age:</h3>
+                    <p>Age in Years</p>
+                </div>              -->
+            </div>
+        </div>
+    </div>
+
+     <script src="js/script.js"></script>
 </body>
 </html>
