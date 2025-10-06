@@ -1,0 +1,1 @@
+This is a fruit slicing game for learning with fun.
