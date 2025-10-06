@@ -1,0 +1,27 @@
+<!-- Specify that the transition of the <div> element should have a "0.5" second delay before starting. -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div 
+            {
+                width: 100px;
+                height: 100px;
+                background: red;
+                transition: width 2s;
+                       transition-delay   : 0.5s;
+            }
+            div:hover 
+            {
+                width: 300px;
+            }
+        </style>
+        <title>Exercise 1</title>
+    </head>
+    <body>
+        <div>This is a div</div>
+    </body>
+    </html>

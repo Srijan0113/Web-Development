@@ -1,0 +1,28 @@
+body {
+    padding: 10px 50px;
+}
+
+.formdesign {
+    font-size: 20 px;
+}
+
+.formdesign input {
+    width: 50%;
+    padding: 12px 20px;
+    border: 1px solid aqua;
+    margin: 14px;
+    border-radius: 6px;
+    font-size: 18px;
+}
+
+.formerror {
+    color: rgb(199, 31, 31);
+}
+
+.but{
+    border-radius: 10 px ;
+    width : 100 px;
+    height: 50 px;
+    font-size: 25 px;
+    margin : 22px 20 px ;
+}

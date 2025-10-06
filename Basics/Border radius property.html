@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border radius property</title>
+
+    <style>
+#radius1{
+    border: 2px solid red;
+     border-radius: 55px /60px ; /*elliptical corner*/
+     height:200px;
+     width: 150px;
+     padding: 30px ;
+}
+#radius2{
+   /* border: 2px solid red;*/
+   background-image: url(bike.jpg) ;
+   background-repeat: no-repeat;
+     border-radius: 45px 65px;
+     height:200px;
+     width: 150px;
+     padding: 30px ;
+}
+#radius3{
+    /*border: 2px solid red;*/
+    background-color: blueviolet;
+     border-radius: 15px 90px 30px 65px ;
+     height:200px;
+     width: 150px;
+     padding: 30px ;
+}
+#radius4{
+    border: 2px solid transparent;
+  /*  border-image: url(bike.jpg)2 round;*/
+    border-image: url(bike.jpg)2 stretch;
+
+     
+     padding: 30px ;
+}
+    </style>
+</head>
+<body>
+    <h1>Border Radius Property</h1>
+    <p id="radius1">Radius corner 1 </p>
+    <p id="radius2">Radius corner 2 </p>
+    <p id="radius3">Radius corner 3 </p>
+    <p id="radius4">Radius corner 4 </p>
+    <p><img src="bike.jpg" alt="img" width="200px"></p>
+</body>
+</html>

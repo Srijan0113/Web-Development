@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+</head>
+<body>
+    <form action = "/myaction.php" name="myform" onsubmit="return validateform()" method="post">
+    
+    <div class="formdesign" id = "name">
+        Name: <input type="text" name="fname" >
+      <b>  <span class="formerror"></span></b>
+    </div>
+
+    <input type="submit" value="Submit" class="but">
+     
+    </form>
+    <script>
+        function clearerrors(){
+            errors = document.getElementsByClassName('formerror');
+            for (let item of errors){
+                item.innerHTML = "blank";
+            }
+        }
+        function seterror(id,error){
+            element = document.getElementById(id);
+            element.getElementsByClassName('formerror')[0].innerHTML=error;
+        }
+        function validateform(){
+            var returnval= true;
+            clearerrors();
+var name=document.forms['myform']["fname"].value;
+if (name.length<5){
+    seterror("name","length of name can't be zero");
+    returnval= false;
+    
+}
+
+
+return returnval;
+        }
+    </script>
+</body>
+</html>

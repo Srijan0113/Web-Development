@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Gradient</title>
+    <style>
+        #grad{
+            padding: 40px;
+            height:250px;
+            background-color: rgb(237, 241, 241);
+            font-size: xx-large;
+           /* background-image: linear-gradient(to right, gray, salmon);*/
+           /* background-image: linear-gradient(to right bottom, gray, salmon);*/
+
+           background-image: linear-gradient(rgba(14, 95, 128, .4),rgba(236,0,0,.7));
+
+
+           /* background-image: -moz-radial-gradient(gray, salmon);
+            background-image: -webkit-linear-gradient(gray, salmon); */
+        }
+        #grad1{
+            padding: 40px;
+            height:250px;
+            width: 250px;
+            background-color: rgb(237, 241, 241);
+            font-size: xx-large;
+          /*  background-image: radial-gradient(red,green,blue,yellow,orange);       /*percentage ani degree ni dinw milxw*/
+          /*  background-image: radial-gradient(circle,red,orange); */
+           /* background-image: radial-gradient(closest-corner at 60% 30% ,red,blue);
+            background-image: radial-gradient(farthest-corner at 60% 30% ,red,blue); */
+            background-image: radial-gradient(farthest-side at 60% 30% ,red,blue);
+
+        
+        }
+
+    </style>
+</head>
+<body>
+    <div id="grad">
+        <p>Linear Gradient</p>
+    </div>
+    <div id="grad1">
+        <p>Radient Gradient</p>
+    </div>
+</body>
+</html>

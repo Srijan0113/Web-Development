@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in Javascript</title>
+</head>
+<body>
+   <marquee  style = color:aqua ><h1>yo chai tettikai lekhdeko lw</h1></marquee> 
+   <script>
+    let friends = ["Rohan","subod","roshan",'shiva','sumod','sudip']
+friends.forEach(function f(element){
+    console.log("hello friend , " + element + " to Js ");
+});
+// or 
+for (element of friends)
+{
+    console.log("hello friend , " + element + " to Js ");
+}
+// or 
+for (let i = 0; i < friends.length; i++) {
+    console.log ("hello " + friends[i]);
+    
+}
+let employee= {
+            name: 'Srijan',
+            salary : 10, 
+            channel : "mr.siri",
+            channel2: "heysiri123",
+}
+for(key in employee){
+    console.log(`the ${key} of employee is ${employee[key]}`);
+}
+   </script>
+</body>
+</html>

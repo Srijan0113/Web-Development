@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            display:grid;
+            grid-template-columns: 100px auto 200px auto;
+            grid-template-rows: 60px 100px;
+            background-color: #3b54ff;
+            padding: 10px;
+            /* row-gap: 30px;
+            column-gap: 25px; */
+            gap:45px 50px;
+            justify-content: start;
+            align-content: end;
+            height:500px;
+
+        }
+        .item{
+            background-color: antiquewhite;
+            border:1px solid burlywood;
+            padding:20px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid Elements</h1>
+    <p>In grid layout must have a parent element with <em>display</em> set as <em> grid</em> or <em> Inline grid</em></p>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <!-- <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div> -->
+    </div>
+</body>
+</html>

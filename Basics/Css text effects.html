@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css text effect</title>
+    <style>
+        .text1{
+            white-space:nowrap;
+            width:300px;
+            border: 1px solid red;
+            overflow:hidden;
+            text-overflow: clip;
+        }
+        .text2{
+            white-space:nowrap;
+            width:200px;
+            border: 1px solid red;
+            overflow:hidden;
+            text-overflow: ellipsis;
+        }
+        .text1:hover{
+        overflow:visible;
+        border:0px;
+        }
+        .text3{
+            width:400px;
+            border:1px solid greenyellow;
+            word-wrap: break-word;
+      /* word-break: keep-all;yo  (-) symbol jaa use hunxw tyai bata break */
+      /* word-break:break-all; jha bata ni break hunw sakxw*/
+        }
+        span.ap{
+            writing-mode: vertical-lr;
+        }
+        .text5{
+            writing-mode: vertical-lr;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Text overflow Property</h1>
+    <p class="text1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, ab eius tenetur dignissimos maxime reprehenderit facilis recusandae natus illo iusto quia blanditiis, quis, dolores sapiente reiciendis modi iure vitae atque.</p>
+    <p class="text2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, ab eius tenetur dignissimos maxime reprehenderit facilis recusandae natus illo iusto quia blanditiis, quis, dolores sapiente reiciendis modi iure vitae atque.</p>
+    <p class="text3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, ab eius tenetur dignissimos maxime reprehenderit facilis recusandae natus illo iusto quia blanditiis, thejsdjkgjlsgjs;lgkgjssjlkgsjgldgskjkjkjhkjhkjhkjfyfjhgjhghgjgj doloresapiente reiciendis modi iure vitae atque.</p>
+    <p class="text4">This is a <span class="ap">Paragraph</span></p>
+    <p ><span class="text5">Lorem ipsum, dolor sit</span> amet consectetur adipisicing elit. Ipsam, ab eius tenetur dignissimos maxime reprehenderit facilis recusandae natus illo iusto quia blanditiis, thejsdjkgjlsgjs;lgkgjssjlkgsjgldgskjkjkjhkjhkjhkjfyfjhgjhghgjgj doloresapiente reiciendis modi iure vitae atque.</p>
+</body>
+</html>
