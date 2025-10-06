@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            display: flex;
+            background-color: aquamarine;
+            /* flex-wrap: wrap-reverse;
+            flex-direction: column-reverse; */
+            /* shorthand  */
+            flex-flow: row wrap;
+            height: 400px;
+           
+             justify-content: center; 
+             /*horizontally align garnw ko lagi */
+            align-items: end; /*vertically align garnw ko lagi */
+        }
+        .container>div{
+            background-color: whitesmoke;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+        #div1{
+            order: 3;
+            flex-basis: 100px;
+            align-self: center;
+        }
+        #div2{
+             order: 1;
+             flex-grow: 3;
+             align-self:baseline;
+        }
+        #div3{
+               order: 4;
+               /* flex-grow: 4;
+               flex-shrink: 6; */
+               flex: 7 6 0;
+               align-self: flex-end;
+        }
+        #div4{
+                 order :2;
+                 align-self:flex-start;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+<div id="div1">1</div>
+<div id="div2">2</div>
+<div id="div3">3</div>
+<div id="div4">4</div>
+<!-- <div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div> -->
+
+
+    </div>
+</body>
+</html>
